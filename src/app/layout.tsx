@@ -20,7 +20,7 @@ const description =
   "Systems Engineer specialized in backend engineering and software architecture with C#, .NET 8/9, ASP.NET Core, PostgreSQL and React. Clean Architecture, DDD, CQRS and production deployments.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://joaquinolivo.vercel.app"),
+  metadataBase: new URL("https://jolivo.vercel.app"),
   title: {
     default: title,
     template: `%s — ${profile.name}`,
