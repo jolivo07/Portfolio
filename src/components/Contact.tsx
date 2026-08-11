@@ -3,6 +3,10 @@ import { profile } from "@/data/profile";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
+/** Strips protocol, www and trailing slash so long profile URLs stay readable. */
+const prettyUrl = (url: string) =>
+  url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+
 export function Contact() {
   return (
     <section id="contact" className="px-6 py-24 md:py-32">
@@ -40,8 +44,8 @@ export function Contact() {
                 {[
                   { Icon: Mail, label: "Email", value: profile.email, href: `mailto:${profile.email}` },
                   { Icon: Phone, label: "Phone", value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, "")}` },
-                  { Icon: Github, label: "GitHub", value: profile.github.replace(/^https?:\/\//, ""), href: profile.github },
-                  { Icon: Linkedin, label: "LinkedIn", value: profile.linkedin.replace(/^https?:\/\//, ""), href: profile.linkedin },
+                  { Icon: Github, label: "GitHub", value: prettyUrl(profile.github), href: profile.github },
+                  { Icon: Linkedin, label: "LinkedIn", value: prettyUrl(profile.linkedin), href: profile.linkedin },
                   { Icon: MapPin, label: "Location", value: profile.location, href: undefined },
                 ].map(({ Icon, label, value, href }) => {
                   const inner = (

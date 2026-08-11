@@ -11,9 +11,9 @@ export const profile = {
   location: "Barranquilla, Atlántico, Colombia",
   email: "joaquin.olivo@hotmail.com",
   phone: "+57 304 201 5706",
-  // TODO: replace with your real profiles
-  github: "https://github.com/joaquinolivo",
-  linkedin: "https://www.linkedin.com/in/joaquinolivo",
+  github: "https://github.com/jolivo07",
+  linkedin:
+    "https://www.linkedin.com/in/joaquin-olivo-escalante-49a455261/",
   resumeUrl: "/Joaquin_Olivo_CV.pdf",
   headline:
     "I design and build backend systems that hold up under real-world complexity.",
@@ -145,6 +145,7 @@ export const projects: Project[] = [
       "Cloudflare R2",
       "Render",
     ],
+    demo: "https://urbani-soft.vercel.app",
   },
   {
     slug: "evolvepos",
@@ -193,6 +194,7 @@ export const projects: Project[] = [
       "Docker",
       "External APIs",
     ],
+    demo: "https://sound-ia.vercel.app",
   },
   {
     slug: "controlinventory",
@@ -223,6 +225,7 @@ export const projects: Project[] = [
       "Continuous deployment on Vercel",
     ],
     stack: ["React", "Tailwind CSS", "Vercel"],
+    demo: "https://ene-moda.vercel.app",
   },
   {
     slug: "basse-depbot",
