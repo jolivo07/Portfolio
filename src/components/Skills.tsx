@@ -25,7 +25,7 @@ export function Skills() {
     <section id="skills" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
-          index="02"
+          index="03"
           subtitle="Skills"
           title="What I build with"
         />

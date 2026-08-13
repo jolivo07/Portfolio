@@ -6,10 +6,10 @@ import { ThemeToggle } from "./ThemeToggle";
 import { profile } from "@/data/profile";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#skills", label: "Skills" },
+  { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
 

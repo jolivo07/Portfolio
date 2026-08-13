@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { profile } from "@/data/profile";
+import { CursorBackdrop } from "@/components/CursorBackdrop";
 import "./globals.css";
 
 const inter = Inter({
@@ -94,6 +95,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${jetbrains.variable}`}>
         <div className="app-backdrop" aria-hidden="true" />
         <div className="app-glow" aria-hidden="true" />
+        <CursorBackdrop />
         {children}
       </body>
     </html>

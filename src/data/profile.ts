@@ -18,12 +18,12 @@ export const profile = {
   headline:
     "I design and build backend systems that hold up under real-world complexity.",
   summary:
-    "Systems Engineer focused on backend engineering, software architecture, and product development. I work with C#, .NET 8/9, ASP.NET Core, EF Core, PostgreSQL and SQL Server, and I build the interfaces on top with React, Vite and Tailwind CSS. My day-to-day is Clean Architecture, DDD, CQRS and SOLID applied to real problems: API design, persistence, authorization, synchronization, cloud storage and deployment — from requirements through testing, documentation and production.",
+    "Systems Engineer focused on backend engineering, software architecture, and product development. I work with C#, .NET 8/9, ASP.NET Core, EF Core, PostgreSQL and SQL Server, and I build the interfaces on top with React, Vite and Tailwind CSS. My day-to-day is Clean Architecture, DDD, CQRS and SOLID applied to real problems: API design, persistence, authorization, synchronization, cloud storage and deployment — from requirements through testing, documentation and production. I currently own projects end to end as sole developer and build the automated test suites that keep them safe to release.",
   availability: "Open to Backend, .NET, Software Engineer & Full-Stack roles",
 };
 
 export const stats = [
-  { value: "3+", label: "Years building software" },
+  { value: "4+", label: "Years building software" },
   { value: "6+", label: "Production-grade projects" },
   { value: ".NET 9", label: "Primary stack" },
   { value: "5", label: "Architectures shipped" },
@@ -92,7 +92,7 @@ export const skillGroups = [
     items: ["VB.NET", "WPF", "Kotlin", "Jetpack Compose", "MVVM", "Hilt"],
   },
   {
-    title: "DevOps & Cloud",
+    title: "DevOps, Cloud & QA",
     icon: "cloud",
     items: [
       "Git",
@@ -101,7 +101,8 @@ export const skillGroups = [
       "Render",
       "Vercel",
       "Cloudflare R2",
-      "Environment config",
+      "Automated testing",
+      "QA",
     ],
   },
 ];
@@ -244,11 +245,32 @@ export const projects: Project[] = [
   },
 ];
 
-export const experience = [
+export type Job = {
+  company: string;
+  role: string;
+  period: string;
+  current?: boolean;
+  bullets: string[];
+};
+
+export const experience: Job[] = [
+  {
+    company: "EvolvePOS S.A.S.",
+    role: "Software Developer & QA Automation",
+    period: "2025 – Present",
+    current: true,
+    bullets: [
+      "Own assigned projects end to end — requirements analysis, architecture, implementation, testing and deployment — as sole developer, with full technical decision-making autonomy.",
+      "Design and build backend services and product features across several concurrent projects, expanding both delivery volume and scope of responsibility within the company.",
+      "Design, implement and maintain automated test suites, covering regression and functional testing to protect releases as the product grows.",
+      "Run QA activities alongside development: test planning, execution, defect tracking and validation of fixes before release.",
+      "Plan and track technical activities, and produce installation, operation and progress documentation.",
+    ],
+  },
   {
     company: "Universal Retail Systems",
     role: "Back-End Developer",
-    period: "Apr 2023 – Aug 2023",
+    period: "2023 – 2025",
     bullets: [
       "Planned, designed and developed software products from business and technical requirements.",
       "Applied testing and validation to products built by the engineering team.",

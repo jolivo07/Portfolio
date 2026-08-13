@@ -8,7 +8,7 @@ export function Experience() {
     <section id="experience" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
-          index="04"
+          index="01"
           subtitle="Experience"
           title="Where I've worked"
         />
@@ -24,7 +24,13 @@ export function Experience() {
             {experience.map((job, i) => (
               <Reveal key={job.company} delay={i * 0.08}>
                 <div className="relative flex gap-6">
-                  <span className="relative z-10 grid h-10 w-10 shrink-0 place-items-center rounded-full border border-border-strong bg-bg text-accent md:h-12 md:w-12">
+                  <span
+                    className={`relative z-10 grid h-10 w-10 shrink-0 place-items-center rounded-full border bg-bg text-accent md:h-12 md:w-12 ${
+                      job.current
+                        ? "border-accent shadow-[0_0_0_4px_var(--accent-glow)]"
+                        : "border-border-strong"
+                    }`}
+                  >
                     <Briefcase className="h-4 w-4 md:h-5 md:w-5" />
                   </span>
 
@@ -33,7 +39,13 @@ export function Experience() {
                       <h3 className="text-lg font-semibold tracking-tight">
                         {job.role}
                       </h3>
-                      <span className="font-mono text-xs text-fg-subtle">
+                      <span
+                        className={`font-mono text-xs ${
+                          job.current
+                            ? "rounded-full border border-accent/40 bg-accent/10 px-2.5 py-1 text-accent"
+                            : "text-fg-subtle"
+                        }`}
+                      >
                         {job.period}
                       </span>
                     </div>
