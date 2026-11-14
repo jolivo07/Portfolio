@@ -74,11 +74,19 @@ npm run build
 
 ## Deployment
 
-Deployed on Vercel. Production builds are published with:
+Deployed on Vercel at [jolivo.vercel.app](https://jolivo.vercel.app). This repository is
+connected to the Vercel project, so **every push to `main` deploys to production
+automatically** — no manual step.
+
+To publish from the command line instead (useful when something needs to go out without a
+commit):
 
 ```bash
 npx vercel deploy --prod
 ```
+
+That path needs a logged-in CLI (`npx vercel login`) and the local `.vercel/project.json`
+link, which is gitignored — a fresh clone has to run `npx vercel link` first.
 
 ## Résumé
 
