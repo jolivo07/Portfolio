@@ -2,8 +2,10 @@ import {
   Cloud,
   Code2,
   Database,
+  FlaskConical,
   Layers,
   Server,
+  Shapes,
   Smartphone,
   type LucideIcon,
 } from "lucide-react";
@@ -18,6 +20,8 @@ const icons: Record<string, LucideIcon> = {
   code: Code2,
   smartphone: Smartphone,
   cloud: Cloud,
+  patterns: Shapes,
+  testing: FlaskConical,
 };
 
 export function Skills() {
