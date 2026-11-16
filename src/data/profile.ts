@@ -18,7 +18,7 @@ export const profile = {
   headline:
     "I design and build backend systems that hold up under real-world complexity.",
   summary:
-    "Systems Engineer focused on backend engineering, software architecture, and product development. I work with C#, .NET 8/9, ASP.NET Core and EF Core over both SQL and NoSQL stores — PostgreSQL, SQL Server and Oracle alongside MongoDB, Redis and Azure Cosmos DB — and I build the interfaces on top with Angular and React. My day-to-day is Clean Architecture, DDD, CQRS, SOLID and the design patterns that hold them together: Repository, Unit of Work, Mediator, Strategy, Factory and Specification applied to real problems rather than quoted from a book. I currently own projects end to end as sole developer, work them through Azure DevOps boards and pipelines, and back them with unit tests and SonarQube quality gates.",
+    "Systems Engineer focused on backend engineering, software architecture, and product development. I work with C#, .NET 8/9, ASP.NET Core and EF Core over both SQL and NoSQL stores — PostgreSQL, SQL Server and Oracle alongside MongoDB, Redis and Azure Cosmos DB — and I build the interfaces on top with Angular and React. My day-to-day is Clean Architecture, DDD, CQRS, SOLID and the design patterns that hold them together: Repository, Unit of Work, Mediator, Strategy, Factory and Specification applied to real problems rather than quoted from a book. I currently own projects end to end as sole developer, work them in Scrum through Azure DevOps boards and continuous-integration pipelines, and back them with unit tests and static code analysis in SonarQube.",
   availability: "Open to Backend, .NET, Software Engineer & Full-Stack roles",
 };
 
@@ -89,13 +89,17 @@ export const skillGroups = [
       "Azure Cosmos DB",
       "EF Core",
       "LINQ",
+      "Stored procedures",
+      "Query optimization",
+      "Data processing & reporting",
+      "Power BI",
     ],
   },
   {
     title: "Frontend",
     icon: "code",
     items: [
-      "Angular",
+      "Angular 8+",
       "React",
       "TypeScript",
       "Vite",
@@ -118,6 +122,8 @@ export const skillGroups = [
       "Azure DevOps",
       "Azure Boards",
       "Azure Pipelines",
+      "CI/CD",
+      "Deployment automation",
       "Git",
       "GitHub",
       "Docker",
@@ -133,10 +139,24 @@ export const skillGroups = [
       "Unit testing",
       "Automated testing",
       "Regression & functional suites",
+      "Static code analysis",
       "SonarQube",
       "Code quality metrics",
       "Test planning",
       "Defect tracking",
+    ],
+  },
+  {
+    title: "Agile & Practices",
+    icon: "practices",
+    items: [
+      "Scrum",
+      "Agile ceremonies",
+      "Continuous integration",
+      "Clean code",
+      "Code review",
+      "Source control & configuration management",
+      "Technical documentation",
     ],
   },
 ];
@@ -295,11 +315,11 @@ export const experience: Job[] = [
     current: true,
     bullets: [
       "Own assigned projects end to end — requirements analysis, architecture, implementation, testing and deployment — as sole developer, with full technical decision-making autonomy.",
-      "Design and build backend services and Angular front-ends across several concurrent projects, applying Clean Architecture and design patterns — Repository, Unit of Work, Mediator, Strategy — to keep them maintainable as they grow.",
+      "Design and build REST Web API services in .NET and Angular front-ends across several concurrent projects, applying Clean Architecture and design patterns — Repository, Unit of Work, Mediator, Strategy — to keep them maintainable as they grow.",
       "Model persistence over both relational and NoSQL stores, choosing SQL Server or PostgreSQL for transactional data and MongoDB, Redis or Azure Cosmos DB where document storage, caching or scale fit better.",
-      "Write unit tests and maintain automated regression and functional suites, with SonarQube quality gates enforcing code-quality metrics before anything reaches a release.",
+      "Write unit tests and maintain automated regression and functional suites, with static code analysis in SonarQube enforcing quality gates before anything reaches a release.",
       "Run QA alongside development: test planning, execution, defect tracking and validation of fixes before release.",
-      "Manage work through Azure DevOps — Boards for planning and tracking, Pipelines for build and deployment — and produce installation, operation and progress documentation.",
+      "Work in Scrum and manage delivery through Azure DevOps — Boards for planning and tracking, Pipelines for continuous integration and automated deployment — and produce installation, operation and progress documentation.",
     ],
   },
   {

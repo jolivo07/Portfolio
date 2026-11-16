@@ -7,6 +7,7 @@ import {
   Server,
   Shapes,
   Smartphone,
+  Workflow,
   type LucideIcon,
 } from "lucide-react";
 import { skillGroups } from "@/data/profile";
@@ -22,6 +23,7 @@ const icons: Record<string, LucideIcon> = {
   cloud: Cloud,
   patterns: Shapes,
   testing: FlaskConical,
+  practices: Workflow,
 };
 
 export function Skills() {
